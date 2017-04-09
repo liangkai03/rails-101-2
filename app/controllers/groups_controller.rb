@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :authenticate_user! , only: [:new, :create]
   def index
-    @group = Group.all
+    @groups = Group.all
   end
 
   def show
@@ -46,7 +46,7 @@ end
 private
 
 def group_params
-  params.require(:group).permit(:tittle, :description)
+  params.require(:group).permit(:title, :description)
 end
 
 end

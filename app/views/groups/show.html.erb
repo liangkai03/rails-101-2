@@ -7,7 +7,7 @@
             <%= link_to("Quit Group", quit_group_path(@group), method: :post, class: "btn btn-default") %>
       <% else %>
        <label class="label label-warning"> 不是群组成员 </label>
-          <%= link_to("Join Gruop", jion_group_path(@group), method: :post, class: "btn btn-default") %>
+          <%= link_to("Join Gruop", join_group_path(@group), method: :post, class: "btn btn-default") %>
 
        <% end %>
     </span>
